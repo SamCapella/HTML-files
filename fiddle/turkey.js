@@ -10,10 +10,18 @@ document.getElementById(sam).style.textDecoration = "line-through";
 
 function clearall()
 {
-	names = document.getElementsByClassName("task");
-
-  for(var i = 0; i <names.length; i++)
-  {
-  	names [i].style.textDecoration= "none";
-  }
+	names = $('.task');
+	names.css("text-decoration","none");
 }
+function addListItemButton()
+{
+	var i = prompt("enter the item to add to the list");
+	addListItem(i);
+}
+function addListItem(text){
+  list = document.querySelector('ol');
+  item = document.createElement('li');
+  item.innerText = text;
+  list.appendChild(item);
+}
+addListItem("get on a plane");

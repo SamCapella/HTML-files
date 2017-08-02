@@ -3,6 +3,7 @@
 <head>
   <title>Bucket List</title>
   <link rel="stylesheet" type="text/css" href="turkey.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="turkey.js"></script>
 </head>
 <body>
@@ -32,8 +33,13 @@
       <li class="task" id="todo7">Do laundry
           <button onclick="TaskDone('todo7')">DONE</button>
       </li>
-       <button onclick="clearall()">Clear All</button>
+      <li class="task" id="todo8">Get on a plane
+          <button onclick="TaskDone('todo8')">DONE</button>
+        </li>
+        <li class="task" id="todo9">Own a pig
+            <button onclick="TaskDone('todo9')">DONE</button>
      </ol>
-
+     <button onclick="clearall()">Clear All</button>
+      <button onclick="addListItemButton()">ADD ITEM</button>
 </body>
 </html>
